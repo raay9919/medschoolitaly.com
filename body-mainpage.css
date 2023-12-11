@@ -1,14 +1,14 @@
 * { 
     margin: 0;
     padding: 0;
-    font-family: 'Padauk', sans-serif;
+    font-family: 'Padauk' , sans-serif;
 }
 
 html{ scroll-behavior: smooth;}
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(IMG_4228.JPG);
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)),url(IMG_4228.JPG);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -40,7 +40,7 @@ nav {
 .Study { font-size: 170%; color: green; text-transform: uppercase; font-weight: bold;}
 .Medicine { font-size: 170%; color: white; text-transform: uppercase; font-weight: bold;}
 .Italy { font-size: 170%; color: red; text-transform: uppercase; font-weight: bold;}
-.in { font-size: 100%; color: black; font-weight: bold;}
+.in { font-size: 100%; color: black; font-weight: bold; text-shadow: none;}
 
 
 .nav-links ul li{
