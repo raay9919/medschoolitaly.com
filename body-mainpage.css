@@ -1,0 +1,176 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Padauk', sans-serif;
+}
+
+html{ scroll-behavior: smooth;}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(IMG_4228.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: fit-content;
+    min-height: 7%;
+    width: 90%;
+    background: rgb(5,13,47);
+    background: -moz-linear-gradient(90deg, rgba(5,13,47,1) 0%, rgba(28, 109, 163, 0.953) 54%);
+    background: -webkit-linear-gradient(90deg, rgba(5,13,47,1) 0%, rgba(28, 109, 163, 0.953) 54%);
+    background: linear-gradient(90deg, rgba(5,13,47,1) 0%, rgba(28,110,163,0.953) 54%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050d2f",endColorstr="#1c6ea3",GradientType=1);
+    z-index: 5;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+#main-logo {text-decoration: none; font-size: 100%; text-shadow: 1px 1px 3px black;}
+.Study { font-size: 170%; color: green; text-transform: uppercase; font-weight: bold;}
+.Medicine { font-size: 170%; color: white; text-transform: uppercase; font-weight: bold;}
+.Italy { font-size: 170%; color: red; text-transform: uppercase; font-weight: bold;}
+.in { font-size: 100%; color: black; font-weight: bold;}
+
+
+.nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #de0d0d;
+    display: block;
+    margin: auto; 
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.Box { width: 90%; color: #fff; position:absolute; top: 83%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
+.Box a { display: inline-block; text-decoration: none; color: #fff; border: 1px solid #fff; padding: 12px 34px ;
+    font-size: 100%; background: rgb(6,20,53);
+    background: -moz-linear-gradient(90deg, rgba(6,20,53,0.5) 0%, rgba(10,91,112,0.5) 45%);
+    background: -webkit-linear-gradient(90deg, rgba(6,20,53,0.5) 0%, rgba(10,91,112,0.5) 45%);
+    background: linear-gradient(90deg, rgba(6,20,53,0.5) 0%, rgba(10,91,112,0.5) 45%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#061435",endColorstr="#0a5b70",GradientType=1); position: relative; 
+}
+
+
+
+.button1:hover { background: rgb(19,6,53);
+    background: -moz-linear-gradient(90deg, rgba(19,6,53,0.5971638655462185) 0%, rgba(196,18,192,0.499124649859944) 74%);
+    background: -webkit-linear-gradient(90deg, rgba(19,6,53,0.5971638655462185) 0%, rgba(196,18,192,0.499124649859944) 74%);
+    background: linear-gradient(90deg, rgba(19,6,53,0.5971638655462185) 0%, rgba(196,18,192,0.499124649859944) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130635",endColorstr="#c412c0",GradientType=1);   
+transition: 0.5s;}
+
+.Box a:active { background: red; cursor: grabbing;}
+
+.nothing {border: 1px solid black; position: absolute; top: 90%; left: 50%;}
+
+.main-content {
+    width: 62%; text-align: justify; padding: 2% 1% 3% 7%; float: left; 
+}
+
+.information {
+    padding: 2%; margin: 3% 2% 2% 2%; border-radius: 5%; background: rgb(138,221,223);
+    background: -moz-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: -webkit-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8adddf",endColorstr="#13ceec",GradientType=1);
+}
+.information h1 { padding: 0.5% 2% 0.5% 2%; text-align: center; margin: auto; width: fit-content; border-radius: 5%;
+align-self: center;}
+.information p { text-indent: 10%; margin-top: 2%; font-size: 115%; padding: 0% 3% 0% 3%;}
+
+.about {
+    padding: 2%; margin: 4% 2% 2% 2%; border-radius: 5%; background: rgb(138,221,223);
+    background: -moz-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: -webkit-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8adddf",endColorstr="#13ceec",GradientType=1);
+}
+.about h1 { padding: 0.5% 2% 0.5% 2%; text-align: center;}
+.about p { text-indent: 10%; margin-top: 2%; font-size: 115%; padding: 0% 3% 0% 3%;}
+
+.LetsStart {
+    padding: 2%; margin: 1% 2% 2% 2%; border-radius: 5%; background: rgb(138,221,223);
+    background: -moz-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: -webkit-linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    background: linear-gradient(106deg, rgba(138,221,223,0.4431022408963585) 0%, rgba(19,206,236,0.4543067226890757) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8adddf",endColorstr="#13ceec",GradientType=1);
+     margin: 4% 2% 2% 2%;
+}
+.LetsStart h1 { padding: 0.5% 2% 0.5% 2%; text-align: center;}
+.LetsStart p { text-indent: 10%; margin-top: 2%; font-size: 115%; padding: 0% 3% 0% 3%;}
+.LetsStart h3 { margin-top: 2%; text-decoration: underline; padding: 2%;}
+
+.LetsStart ol{ margin-top: 1%;}
+.LetsStart ol li { padding: 1% 2% 1% 2%; font-size: 120%; list-style-position: inside;}
+.LetsStart ol li a { color: black; text-decoration: none; font-weight: bold; transition: 0.5s;}
+.LetsStart ol li a:hover{ color: darkblue; text-decoration: underline;}
+.LetsStart ol li a:active{ color: darkred; text-decoration: none;}
+
+.LetsStart .BackToTop a { color: black; transition:0.5s;}
+.LetsStart .BackToTop a:hover {color: mediumvioletred; }
+#homebutton { color: black;}
+.LetsStart .BackToTop{ text-align: right; font-size: 110%; font-weight: bold;}
+.FAQ {
+    float: left; width: 25%; padding: 2% 1.5% 2% 3%; line-height: 150%; background: rgb(138,220,223);
+    background: -moz-linear-gradient(270deg, rgba(138,220,223,0.44870448179271705) 0%, rgba(19,206,236,0.4431022408963585) 62%);
+    background: -webkit-linear-gradient(270deg, rgba(138,220,223,0.44870448179271705) 0%, rgba(19,206,236,0.4431022408963585) 62%);
+    background: linear-gradient(270deg, rgba(138,220,223,0.44870448179271705) 0%, rgba(19,206,236,0.4431022408963585) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8adcdf",endColorstr="#13ceec",GradientType=1); margin-top: 4%; border-radius: 5%;
+}
+
+#bar { color: white;}
+.FAQ h3 { margin: 2%; text-align: center; padding: 1%;}
+.FAQ ul {margin-top: 3%; list-style-type: square;}
+.FAQ ul li {text-align: justify; padding: 2% 0% 1% 0%;} 
+.FAQ ul li a {text-decoration: underline; color: black; transition: 0.5s;}
+.FAQ ul li a:hover {text-decoration: none; color: maroon;}
+
+footer { margin: 0;}
+.footer { clear: left; width: 100%; margin: 0;
+    background: rgb(6,11,53);
+background: -moz-linear-gradient(90deg, rgba(6,11,53,1) 0%, rgba(8,50,84,1) 48%, rgba(12,117,118,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(6,11,53,1) 0%, rgba(8,50,84,1) 48%, rgba(12,117,118,1) 100%);
+background: linear-gradient(90deg, rgba(6,11,53,1) 0%, rgba(8,50,84,1) 48%, rgba(12,117,118,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060b35",endColorstr="#0c7576",GradientType=1);
+     height: 15vh; padding: 0; align-items: center;
+display: flex;}
+
+.footer .contact { text-align: center; margin: 0; width: 100%; justify-content: space-between; border-spacing: 10%; color: white;}
+
+.fa-solid, .fa-brands { color: white;}

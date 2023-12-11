@@ -1,0 +1,10 @@
+@media(min-width: 2000px){
+    .nav-links ul li { font-size: 200%;}
+
+    .Study, .Italy, .Medicine { font-size: 300%;}
+    .in {font-size: 200%;}
+
+    .main-content .information h1 { font-size: 200%;}
+    .main-content .information p { font-size: 170%;}
+}
+
